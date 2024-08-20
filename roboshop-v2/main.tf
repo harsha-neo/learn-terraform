@@ -11,7 +11,7 @@ resource "aws_instance" "instance" {
 
 resource "aws_route53_record" "dns_record" {
   count = length(var.components)
-  zone_id = data.aws_route53_zone.zone.zone_id
+  zone_id = data.aws_route53_zone.zone.Z0698671ZTK19IKWO19R
   name    = "${var.components[count.index]}frontend.dev.${var.domain_name}"
   type    = "A"
   ttl     = 15
