@@ -12,6 +12,5 @@ data "aws_security_groups" "sg"{
   }
 }
 data "aws_route53_zone" "zone" {
-  name         = "harshaneo.online."
-  private_zone = true
+  name         = "harshaneo.online"
 }
