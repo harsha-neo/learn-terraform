@@ -11,7 +11,7 @@ data "aws_security_groups" "sg"{
     values = ["allow-all"]
   }
 }
-
-data "aws_route53_zone.zone" "zone" {
-  name = "var.domain_name"
+data "aws_route53_zone" "zone" {
+  name         = "harshaneo.online."
+  private_zone = true
 }
